@@ -20,7 +20,9 @@ private class ContactServiceTest {
     ContactService contactSvc = new ContactService((ContactSelector) stub.generate());
 
     Test.startTest();
+
       Integer contactCount = contactSvc.getContactSize('mockEmail@example.com');
+      
     Test.stopTest();
 
     System.assertEquals(2, contactCount, 'Mock ContactSelector was not not generated.');
@@ -41,7 +43,9 @@ private class ContactServiceTest {
     ContactService contactSvc = new ContactService((ContactSelector) stub.generate());
     
     Test.startTest();
+
       String emailResult = contactSvc.getEmailByContactRecordId(contact.Id);
+
     Test.stopTest();
     
     System.assertEquals(mockedEmail, emailResult, 'Mock ContactSelector was not not generated.');
