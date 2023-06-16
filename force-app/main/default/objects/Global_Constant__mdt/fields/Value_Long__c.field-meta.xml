@@ -3,6 +3,7 @@
     <fullName>Value_Long__c</fullName>
     <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Either Value__c or Value_Long__c is expected. If Value__c has a value Value_Long__c will be ignored</inlineHelpText>
     <label>Value Long</label>
     <length>32768</length>
     <type>LongTextArea</type>
